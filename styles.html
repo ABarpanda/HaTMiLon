@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-image: url(https://wallpaperaccess.com/full/7046.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .navbar{
+            width:65%;
+            height:50px;
+            border-radius: 10px;
+            opacity: 0.45;
+            backdrop-filter: blur(30px);
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
 
+        }
+        .navbar a{
+            text-decoration: none;
+        }
+        .home,.food,.news,.acadarea,.ess,.sugg{
+            border-radius: 7px;
+            height: 30px;
+            width: 10%;
+            display: flex;
+            font-size:large ;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .home:hover,.food:hover,.news:hover,.acadarea:hover,.sugg:hover,.ess:hover{
+            font-size: 120%;
+            transition:font-size 0.35s;
+            color: rgb(0, 149, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="https://www.google.com"><div class="home">Home</div></a>
+            <a href="https://www.google.com"><div class="food">Food</div></a>
+            <a href="https://www.google.com"><div class="news">News</div></a>
+            
+            <a href="https://www.google.com"><div class="ess">Essentials</div></a>
+            <a href="https://www.google.com"><div class="sugg">Suggestions</div></a>
+        </div>
+    </div>
+    
+</body>
+</html>
