@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suggestions</title>
+        <!-- <link rel="stylesheet" href="homestyle.css"> -->
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                width: fit-content;
+            }
+
+            li {
+                float: left;
+            }
+            
+            li a {
+                display: block;
+                color: black;
+                font-size: 20px;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            #form{
+                padding: 20px;
+                margin-top: 75px;
+                margin-left: 100px;
+                width: fit-content;
+                font-size: 25px;
+                font-family:sans-serif;
+                border-style: dashed;
+                border-width: 2px;
+                border-color: rgb(0, 0, 0);
+                border-radius: 10px;
+                background-color: bisque;
+            }
+            #roll,#name{
+                font-size: 30pt;
+                font-family: 'Arial Narrow';
+                height: 50px;
+                border-radius: 10px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body bgcolor="orange">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="academic_area.html">Academic area</a></li>
+            <li><a href="essentials.html">Essentials</a></li>
+            <li><a href="suggestions.html">Suggestions</a></li>
+        </ul>
+        <div id="form">
+        <form action="/action_page.php">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" size="50" required><br><br>
+            <label for="lname">Roll no.:</label><br>
+            <input type="text" id="roll" name="roll" size="8" required><br><br>
+            <label for="sugg">Suggestion:</label><br>
+            <textarea rows="10" cols="150">Enter your suggestion here</textarea><br><br>
+            <input type="submit" value="Submit" style="font-size: 20px;">
+            <input type="reset" value="Reset" style="font-size: 20px;">
+          </form> 
+        </div>
+    </body>
+</html>
