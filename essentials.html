@@ -1,33 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Essentials</title>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                width: fit-content;
-            }
 
-            li {
-                float: left;
-            }
-            
-            li a {
-                display: block;
-                color: black;
-                font-size: 20px;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essentials</title>
+    <style>
+        body {
+            /* background-image: url();
+            background-size: cover;
+            background-attachment: fixed; */
+            background-color: #000000;
+        }
+
+        nav {
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: fit-content;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: antiquewhite;
+            font-size: 20px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: center;
+        }
+
+        .finance,
+        .health,
+        .temple,
+        .stationary,
+        .guesthouse,
+        .electronics,
+        .office,
+        .cycle,
+        .salon,
+        .shoppingcentre,
+        .sports,
+        .gym {
+            display: inline-block;
+            width: 30vw;
+            padding: 5px;
+            margin: 15px;
+            border-radius: 20px;
+        }
+
+        .finance,
+        .temple,
+        .guesthouse,
+        .office,
+        .salon,
+        .sports {
+            background-color: #054110d5;
+            color: rgba(255, 172, 229, 0.899);
+        }
+
+        .health,
+        .stationary,
+        .electronics,
+        .cycle,
+        .shoppingcentre,
+        .gym {
+            background-color: #1b0a23d4;
+            color: rgba(255, 140, 0, 0.893);
+        }
+
+        .guesthouse a {
+            text-decoration: none;
+            color: rgba(255, 172, 229, 0.899);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="food.html">Food</a></li>
@@ -36,5 +103,98 @@
             <li><a href="essentials.html">Essentials</a></li>
             <li><a href="suggestions.html">Suggestions</a></li>
         </ul>
-    </body>
+    </nav>
+    <div class="container">
+        <div class="finance">
+            <h1>ATM and Banks</h1>
+            <h3>ATM</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur cum quas nihil eaque eligendi adipisci
+                numquam ea delectus reprehenderit quibusdam odio, perspiciatis neque nobis, illum dicta accusantium ab
+                illo
+                necessitatibus!</p>
+            <h3>Banks</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis odio nostrum nisi blanditiis
+                deserunt
+                earum vitae explicabo reiciendis eius, expedita laborum, voluptate voluptates accusamus asperiores
+                similique? Odio nisi unde placeat!</p>
+        </div>
+        <div class="health">
+            <h1>Dispensary</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sunt omnis vitae maxime labore, excepturi
+                ipsa
+                iure totam porro explicabo molestias numquam eos et consequatur facilis mollitia pariatur? Minus,
+                aspernatur!</p>
+        </div>
+        <div class="temple">
+            <h1>Temples</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non error atque amet, exercitationem vero
+                nam expedita laboriosam sit similique iusto deserunt, beatae nobis maiores ullam perspiciatis labore,
+                tempore sint.</p>
+        </div>
+        <div class="stationary">
+            <h1>Stationary</h1>
+            <!-- what are the names of these stationary shops? -->
+            <h3>Near RM Hall</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos quas ut cumque tempore numquam!
+            </p>
+            <h3>Near library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, eum dolorum illum obcaecati velit
+                est? (SMALL BOOK STORE)
+            </p>
+            <h3>Near Boys Hostel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error, soluta explicabo molestias
+                ipsum consequatur?</p>
+        </div>
+        <div class="guesthouse">
+            <h1>Guest House</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facere explicabo nemo expedita itaque,
+                neque
+                repellat minus aliquam maiores saepe quaerat aperiam beatae sunt iure totam vel id at nobis?</p>
+            <p><a href="https://guesthouse.nitrkl.ac.in/Users/HomePage.aspx">BOOK HERE</a></p>
+        </div>
+        <div class="electronics">
+            <h1>Electronics</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptas aliquid, voluptate, eveniet
+                repellat harum, fugiat illum rerum nulla soluta adipisci! Voluptas dicta nemo aspernatur porro vel, nam
+                repudiandae voluptatum.</p>
+        </div>
+        <div class="office">
+            <h1>Post Office</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eligendi sit natus vitae. Qui, soluta!
+            </p>
+        </div>
+        <div class="cycle">
+            <h1>Cycle Repair</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quibusdam magni quo harum quaerat
+                mollitia dolorem libero nesciunt necessitatibus rerum laborum ullam aliquam, id atque voluptatum, iusto,
+                molestias laboriosam quisquam?</p>
+        </div>
+        <div class="salon">
+            <h1>Salon</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quasi dolor quas eos doloribus distinctio
+                recusandae libero porro sint suscipit. Inventore beatae possimus culpa quia debitis vero molestiae
+                incidunt sunt?
+            </p>
+        </div>
+        <div class="shoppingcentre">
+            <h1>Shopping Centre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ut aliquid aut, facilis iusto libero odit
+                veniam officia autem ipsa est nobis veritatis nostrum laboriosam deserunt sed neque nisi culpa!</p>
+        </div>
+        <div class="sports">
+            <h1>Sports</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, nulla sunt. Quasi magnam atque
+                cumque doloremque nihil ducimus ratione, ad facilis sit aliquam quae corrupti? Enim officia esse fuga
+                pariatur?</p>
+        </div>
+        <div class="gym">
+            <h1>Gym and Swimming Pool</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, rem, esse soluta facere sit earum
+                voluptate hic deleniti ea odio eos distinctio architecto dolorem ducimus perferendis impedit doloribus.
+                Obcaecati, labore!</p>
+        </div>
+
+    </div>
+</body>
+
 </html>
