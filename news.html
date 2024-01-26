@@ -82,7 +82,7 @@
       .bboard {
         color: white;
         display: grid;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
       }
       .anc {
@@ -90,6 +90,7 @@
         height: 60px;
         width: 800px;
         margin-left: 50px;
+        padding-left: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -111,6 +112,11 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
         transform: translateY(-3px);
         transition: all 0.3s ease-in-out;
+      }
+      .nws:active {
+        background-color: #262626;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
+        transform: translateY(1px);
       }
     </style>
   </head>
