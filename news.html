@@ -1,40 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Latest News</title>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                width: fit-content;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-image: url(https://wallpaperaccess.com/full/7046.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .navbar {
+        width: 65%;
+        height: 50px;
+        border-radius: 10px;
+        opacity: 0.45;
+        backdrop-filter: blur(30px);
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .navbar a {
+        text-decoration: none;
+      }
+      .home,
+      .food,
+      .news,
+      .acadarea,
+      .ess,
+      .sugg {
+        border-radius: 7px;
+        height: 30px;
+        width: 10%;
+        display: flex;
+        font-size: large;
+        justify-content: center;
+        align-items: center;
+      }
+      .home:hover,
+      .food:hover,
+      .news:hover,
+      .acadarea:hover,
+      .sugg:hover,
+      .ess:hover {
+        font-size: 120%;
+        transition: font-size 0.35s;
+        color: rgb(0, 149, 255);
+      }
+      .highlights {
+        width: 100%;
+        margin-top: 10px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .start,
+      .bulletin,
+      .button {
+        height: 100%;
+        margin-top: 20px;
+      }
+      .bulletin {
+        width: 700px;
+        margin-left: 10px;
+      }
+      .bboard {
+        color: white;
+        display: grid;
+        justify-content: left;
+        align-items: center;
+      }
+      .anc {
+        font-size: 150%;
+        height: 60px;
+        width: 800px;
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nws {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: 900px;
+        padding-left: 30px;
+        background-color: white;
+        color: black;
+        margin-top: 30px;
+        margin-left: 50px;
+      }
+      .nws:hover {
+        background-color: #4c4c4c;
+        color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
+        transition: all 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="https://www.google.com"><div class="home">Home</div></a>
+        <a href="https://www.google.com"><div class="food">Food</div></a>
+        <a href="https://www.google.com"><div class="news">News</div></a>
 
-            li {
-                float: left;
-            }
-            
-            li a {
-                display: block;
-                color: black;
-                font-size: 20px;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="academic_area.html">Academic area</a></li>
-            <li><a href="essentials.html">Essentials</a></li>
-            <li><a href="suggestions.html">Suggestions</a></li>
-        </ul>
-    </body>
+        <a href="https://www.google.com"><div class="ess">Essentials</div></a>
+        <a href="https://www.google.com"><div class="sugg">Suggestions</div></a>
+      </div>
+      <div class="highlights">
+        <div class="start">NEWS HIGHLIGHTS -</div>
+        <div class="bulletin"><span id="element"></span></div>
+        <div class="button">
+          <a href="https://website.nitrkl.ac.in/Home/Our-Latest-News/"
+            ><img src="export_1.svg" width="30px"
+          /></a>
+        </div>
+      </div>
+      <div class="bboard">
+        <div class="anc">ANNOUNCEMENT</div>
+        <div class="nws">
+          Walk-in Interview for the position of Public Relations Officer (on
+          Contract)
+        </div>
+        <div class="nws">
+          Rescheduling of date of interview for the post of Medical Officer (on
+          contract)
+        </div>
+        <div class="nws">
+          Notice for Admission to PhD (Full-Time) under Visvesvaraya PhD Scheme
+          Phase –II, Round – III
+        </div>
+        <div class="nws">Six Months Internship Programe</div>
+        <div class="nws">ADVERTISEMENT FOR ADMISSION TO MBA 2024-26</div>
+        <div class="nws">
+          Establishment of Prof. S.S.Pani Endowment Chair Professor
+        </div>
+        <div class="nws">
+          Notice for caution regarding fraudulent recruitment/admission
+        </div>
+        <div class="nws">CGPA to Percentage (%) Conversion</div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "NIT Rourkela celebrates Republic Day with glory!!",
+          "NIT Rourkela placed at 601-800 in Times World University Ranking...",
+          "Reliance Foundation Scholarship Awarded to 5 Students of CS Department",
+        ],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script></script>
+  </body>
 </html>
