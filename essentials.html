@@ -7,14 +7,56 @@
     <title>Essentials</title>
     <style>
         body {
-            background-image: url(https://images.shiksha.com/mediadata/images/1607331935php7vaw4G.jpeg);
+            background-image: url("images/Essesntials\ background.jpeg");
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
             /* background-color: #000000; */
         }
 
-       
-        ul {
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .container_nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .navbar{
+            width:65%;
+            height:50px;
+            border-radius: 10px;
+            opacity: 0.9;
+            backdrop-filter: blur(30px);
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+
+        .home,.food,.news,.acadarea,.sports,.ess,.sugg{
+            height: 30px;
+            /* width: 10%; */
+            display: flex;
+            font-size:large ;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .home:hover,.food:hover,.news:hover,.acadarea:hover,.sports:hover,.sugg:hover,.ess:hover{
+            font-size: 120%;
+            transition:font-size 0.5s;
+            color: rgb(0, 149, 255);
+        }
+        /* ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -33,7 +75,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-        }
+        } */
 
         .container {
             display: inline-flex;
@@ -43,24 +85,34 @@
         }
 
         .finance,
-        .health,
-        .temple,
-        .stationary,
+        .stationery,
         .guesthouse,
-        .electronics,
-        .office,
         .cycle,
-        .salon,
-        .shoppingcentre {
+        .salon{
             display: inline-block;
             width: 45vw;
-            padding: 5px;
+            padding: 15px;
             margin: 15px;
             border-radius: 20px;
             /* border-style: double; */
             border-color: black;
-            background-color: #00000098;
-           color: white;
+            background-color: rgba(255, 255, 255, 0.664);
+            color: #000000;
+        }
+        .health,
+        .temple,
+        .electronics,
+        .office,
+        .shoppingcentre{
+            display: inline-block;
+            width: 45vw;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 20px;
+            /* border-style: double; */
+            border-color: black;
+            background-color: rgba(255, 247, 0, 0.664);
+            color: #000000;
         }
 
         .guesthouse a {
@@ -71,15 +123,17 @@
 </head>
 
 <body>
-    
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="academic_area.html">Academic area</a></li>
-            <li><a href="essentials.html">Essentials</a></li>
-            <li><a href="suggestions.html">Suggestions</a></li>
-        </ul>
+    <div class="container_nav">
+        <div class="navbar">
+            <a href="index.html"><div class="home">Map</div></a>
+            <a href="food.html"><div class="food">Food</div></a>
+            <a href="news.html"><div class="news">News</div></a>
+            <a href="academic_area.html"><div class="acadarea">Academic_Area</div></a>
+            <a href="sports.html"><div class="sports">Sports</div></a>
+            <a href="essentials.html"><div class="ess">Essentials</div></a>
+            <a href="suggestions.html"><div class="sugg">Suggestions</div></a>
+        </div>
+    </div>
     
     <div class="container">
         <div class="finance">
@@ -108,9 +162,9 @@
                 nam expedita laboriosam sit similique iusto deserunt, beatae nobis maiores ullam perspiciatis labore,
                 tempore sint.</p>
         </div>
-        <div class="stationary">
-            <h1>Stationary</h1>
-            <!-- what are the names of these stationary shops? -->
+        <div class="stationery">
+            <h1>Stationery</h1>
+            <!-- what are the names of these stationery shops? -->
             <h3>Near RM Hall</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos quas ut cumque tempore numquam!
             </p>

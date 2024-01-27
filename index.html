@@ -1,25 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Know Your College</title>
         <link rel="stylesheet" href="homestyle.css">
-    </head>
-    <body background="images/CampusMap.png">
-        
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="academic_area.html">Academic area</a></li>
-            <li><a href="essentials.html">Essentials</a></li>
-            <li><a href="suggestions.html">Suggestions</a></li>
-        </ul>
+        <style>
+            /* ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                width: fit-content;
+            }
 
-        <!--#region-->
-        <br><br><br><br><br><br><br><br><br><br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://library.nitrkl.ac.in/" class="links">BPCL</a>
-        <!--#endregion-->
+            li {
+                float: left;
+            }
+            
+            li a {
+                display: block;
+                color: black;
+                font-size: 20px;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            } */
+            body{
+                background-image: url("images/NIT Rourkela Map.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+            *{
+                font-family: 'Poppins', sans-serif;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+            .navbar{
+                width:65%;
+                height:50px;
+                border-radius: 10px;
+                opacity: 0.9;
+                backdrop-filter: blur(30px);
+                background-color: black;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+            
+
+            .home,.food,.news,.acadarea,.sports,.ess,.sugg{
+                height: 30px;
+                /* width: 10%; */
+                display: flex;
+                font-size:large ;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .home:hover,.food:hover,.news:hover,.acadarea:hover,.sports:hover,.sugg:hover,.ess:hover{
+                font-size: 120%;
+                transition:font-size 0.5s;
+                color: rgb(0, 149, 255);
+            }
+            
+            .map a{
+                background-color: darkslateblue;
+            }
+
+            .map a:hover{
+                font-size: 120%;
+                transition:all 0.5s;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html"><div class="home">Map</div></a>
+                <a href="food.html"><div class="food">Food</div></a>
+                <a href="news.html"><div class="news">News</div></a>
+                <a href="academic_area.html"><div class="acadarea">Academic_Area</div></a>
+                <a href="sports.html"><div class="sports">Sports</div></a>
+                <a href="essentials.html"><div class="ess">Essentials</div></a>
+                <a href="suggestions.html"><div class="sugg">Suggestions</div></a>
+            </div>
+        </div>
+        <div class="map">
+            <a href="" style="position: fixed; top: 190px; left: 600px; font-size: 10px;">Main Building</a>
+            <a href="https://library.nitrkl.ac.in/" style="position: fixed; top: 190px; left: 685px; font-size: 10px;">BPCL</a>
+            <a href="" style="position: fixed; top: 235px; left: 500px; font-size: 10px;">SAC</a>
+            <a href="https://www.google.com/maps/place/Calorie+Canteen/@22.2522302,84.9002149,19.24z/data=!4m14!1m7!3m6!1s0x3a201f72bbd561c3:0xab5c70e76a7b5a!2sNational+Institute+of+Technology,+Rourkela!8m2!3d22.253051!4d84.9009428!16zL20vMGNnM2xr!3m5!1s0x3a201f0349c51acd:0x3521769522aeec8f!8m2!3d22.2523346!4d84.9003763!16s%2Fg%2F11q8x7768k?entry=ttu" style="position: fixed; top: 230px; left: 570px; font-size: 10px;">Calorie</a>
+            <a href="https://www.google.com/maps/place/Rengcol+Canteen/@22.2522896,84.9002151,20.51z/data=!4m14!1m7!3m6!1s0x3a201f72bbd561c3:0xab5c70e76a7b5a!2sNational+Institute+of+Technology,+Rourkela!8m2!3d22.253051!4d84.9009428!16zL20vMGNnM2xr!3m5!1s0x3a201fc94a5237a9:0xa3e3eb97d0682e7d!8m2!3d22.2523759!4d84.9003076!16s%2Fg%2F11hdh31g4p?entry=ttu" style="position: fixed; top: 230px; left: 530px; font-size: 10px;">Rengcol</a>
+            <a href="" style="position: fixed; top: 205px; left: 555px; font-size: 10px;">BBA</a>
+            <a href="" style="position: fixed; top: 238px; left: 600px; font-size: 10px;">Metallurgy dept.</a>
+            <a href="" style="position: fixed; top: 260px; left: 600px; font-size: 10px;">PPA</a>
+            <a href="" style="position: fixed; top: 265px; left: 530px; font-size: 10px;">CSE dept.</a>
+            <a href="" style="position: fixed; top: 380px; left: 550px; font-size: 10px;">Electrical and<br> Electronics dept.</a>
+            <a href="" style="position: fixed; top: 330px; left: 795px; font-size: 10px;">BM & BT dept.</a>
+            <a href="" style="position: fixed; top: 400px; left: 825px; font-size: 10px;">LA 1</a>
+            <a href="" style="position: fixed; top: 450px; left: 825px; font-size: 10px;">LA 2</a>
+            <a href="" style="position: fixed; top: 220px; left: 680px; font-size: 10px;">Arun Tea</a>
+            <a href="" style="position: fixed; top: 240px; left: 680px; font-size: 10px;">Nescafe</a>
+            <a href="" style="position: fixed; top: 240px; left: 730px; font-size: 10px;">Mining dept.</a>
+            <a href="" style="position: fixed; top: 240px; left: 810px; font-size: 10px;">Ceramic dept.</a>
+            <a href="" style="position: fixed; top: 340px; left: 660px; font-size: 10px;">Golden Jubilee Building</a>
+            <a href="" style="position: fixed; top: 290px; left: 650px; font-size: 10px;">UG Lab</a>
+            <a href="" style="position: fixed; top: 290px; left: 695px; font-size: 10px;">Central <br>Workshop</a>
+            <a href="" style="position: fixed; top: 290px; left: 765px; font-size: 10px;">Chem and <br>FP dept.</a>
+            <a href="" style="position: fixed; top: 480px; left: 690px; font-size: 10px;">Mechanical dept.</a>
+            <a href="" style="position: fixed; top: 310px; left: 100px; font-size: 10px;">Market complex</a>
+        </div>
     </body>
 </html>
