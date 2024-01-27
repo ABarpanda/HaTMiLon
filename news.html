@@ -25,9 +25,9 @@
         width: 65%;
         height: 50px;
         border-radius: 10px;
-        opacity: 0.45;
+        /* opacity: 0.45; */
         backdrop-filter: blur(30px);
-        background-color: white;
+        background-color: black;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -35,27 +35,18 @@
       }
       .navbar a {
         text-decoration: none;
+        color: aliceblue;
       }
-      .home,
-      .food,
-      .news,
-      .acadarea,
-      .ess,
-      .sugg {
+      .home,.food,.news,.acadarea,.sports,.ess,.sugg{
         border-radius: 7px;
         height: 30px;
-        width: 10%;
+        /* width: 10%; */
         display: flex;
         font-size: large;
         justify-content: center;
         align-items: center;
       }
-      .home:hover,
-      .food:hover,
-      .news:hover,
-      .acadarea:hover,
-      .sugg:hover,
-      .ess:hover {
+      .home:hover,.food:hover,.news:hover,.acadarea:hover,.sports:hover,.sugg:hover,.ess:hover{
         font-size: 120%;
         transition: font-size 0.35s;
         color: rgb(0, 149, 255);
@@ -123,13 +114,14 @@
   <body>
     <div class="container">
       <div class="navbar">
-        <a href="https://www.google.com"><div class="home">Home</div></a>
-        <a href="https://www.google.com"><div class="food">Food</div></a>
-        <a href="https://www.google.com"><div class="news">News</div></a>
-
-        <a href="https://www.google.com"><div class="ess">Essentials</div></a>
-        <a href="https://www.google.com"><div class="sugg">Suggestions</div></a>
-      </div>
+        <a href="index.html"><div class="home">Map</div></a>
+        <a href="food.html"><div class="food">Food</div></a>
+        <a href="news.html"><div class="news">News</div></a>
+        <a href="academic_area.html"><div class="acadarea">Academic_Area</div></a>
+        <a href="sports.html"><div class="sports">Sports</div></a>
+        <a href="essentials.html"><div class="ess">Essentials</div></a>
+        <a href="suggestions.html"><div class="sugg">Suggestions</div></a>
+    </div>
       <div class="highlights">
         <div class="start">NEWS HIGHLIGHTS -</div>
         <div class="bulletin"><span id="element"></span></div>
