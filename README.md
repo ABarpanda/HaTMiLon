@@ -1,4 +1,4 @@
-ntroducing a platform akin to KYC (Know Your College) tailored specifically for colleges like ours, NIT Rourkela.
+Introducing a platform akin to KYC (Know Your College) tailored specifically for colleges like ours, NIT Rourkela.
 
 Navigating through our expansive campus, especially as a fresher, can be a daunting task. From deciphering the intricate layout to locating essential facilities like hostels, tech points, or even the nearest tea shop, the plethora of information can overwhelm anyone. While orientation sessions aim to cover these aspects, the sheer volume of details can be hard to digest.
 
