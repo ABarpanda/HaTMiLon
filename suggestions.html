@@ -1,74 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Suggestions</title>
-        <!-- <link rel="stylesheet" href="homestyle.css"> -->
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                width: fit-content;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggestions</title>
+    <!-- <link rel="stylesheet" href="homestyle.css"> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-image: url(https://drive.google.com/file/d/1Y5ScAZGYZoIwxQgOgKgPrr5NceSVat3P/view?usp=sharing);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .home {
+        margin-left: 30px;
+      }
+      .navbar {
+        width: 65%;
+        height: 50px;
+        border-radius: 10px;
+        opacity: 0.45;
+        backdrop-filter: blur(30px);
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .navbar a {
+        text-decoration: none;
+      }
+      .home,
+      .food,
+      .news,
+      .acadarea,
+      .ess,
+      .sugg {
+        border-radius: 7px;
+        height: 30px;
+        width: 10%;
+        display: flex;
+        font-size: large;
+        justify-content: center;
+        align-items: center;
+      }
+      .home:hover,
+      .food:hover,
+      .news:hover,
+      .acadarea:hover,
+      .sugg:hover,
+      .ess:hover {
+        font-size: 110%;
+        transition: font-size 0.3s ease-in-out;
+        color: rgb(0, 149, 255);
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: fit-content;
+      }
 
-            li {
-                float: left;
-            }
-            
-            li a {
-                display: block;
-                color: black;
-                font-size: 20px;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
+      li {
+        float: left;
+      }
 
-            #form{
-                padding: 20px;
-                margin-top: 75px;
-                margin-left: 100px;
-                width: fit-content;
-                font-size: 25px;
-                font-family:sans-serif;
-                border-style: dashed;
-                border-width: 2px;
-                border-color: rgb(0, 0, 0);
-                border-radius: 10px;
-                background-color: bisque;
-            }
-            #roll,#name{
-                font-size: 30pt;
-                font-family: 'Arial Narrow';
-                height: 50px;
-                border-radius: 10px;
-                padding: 5px;
-            }
-        </style>
-    </head>
-    <body bgcolor="orange">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="academic_area.html">Academic area</a></li>
-            <li><a href="essentials.html">Essentials</a></li>
-            <li><a href="suggestions.html">Suggestions</a></li>
-        </ul>
-        <div id="form">
+      li a {
+        display: block;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      #form {
+        padding: 20px;
+        margin-top: 75px;
+        width: fit-content;
+        font-size: 25px;
+        font-family: sans-serif;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: rgb(173, 173, 173);
+        border-radius: 10px;
+        color: white;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 0.355) 0%,
+          rgba(9, 9, 121, 0.485) 35%,
+          rgba(0, 213, 255, 0.483) 100%
+        );
+      }
+      #roll,
+      #name {
+        font-size: 30pt;
+        font-family: "Arial Narrow";
+        height: 50px;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .button {
+        background-color: #cfcfcf;
+        color: #000000;
+
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .button:hover {
+        background-color: #4c4c4c;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
+      }
+
+      .button:active {
+        background-color: #262626;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
+        transform: translateY(1px);
+      }
+    </style>
+  </head>
+  <body bgcolor="orange">
+    <div class="container">
+      <div class="navbar">
+        <a href="https://www.google.com"><div class="home">Home</div></a>
+        <a href="https://www.google.com"><div class="food">Food</div></a>
+        <a href="https://www.google.com"><div class="news">News</div></a>
+
+        <a href="https://www.google.com"><div class="ess">Essentials</div></a>
+        <a href="https://www.google.com"><div class="sugg">Suggestions</div></a>
+      </div>
+      <div id="form">
         <form action="/action_page.php">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" size="50" required><br><br>
-            <label for="lname">Roll no.:</label><br>
-            <input type="text" id="roll" name="roll" size="8" required><br><br>
-            <label for="sugg">Suggestion:</label><br>
-            <textarea rows="10" cols="150">Enter your suggestion here</textarea><br><br>
-            <input type="submit" value="Submit" style="font-size: 20px;">
-            <input type="reset" value="Reset" style="font-size: 20px;">
-          </form> 
-        </div>
-    </body>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            size="50"
+            required
+          /><br /><br />
+          <label for="lname">Roll no.:</label><br />
+          <input
+            type="text"
+            id="roll"
+            name="roll"
+            size="8"
+            required
+          /><br /><br />
+          <label for="sugg">Suggestion:</label><br />
+          <textarea rows="10" cols="150">Enter your suggestion here</textarea
+          ><br /><br />
+          <span class="button"
+            ><input
+              type="submit"
+              value="Submit"
+              style="
+                font-size: 20px;
+                color: rgb(30, 30, 30);
+                background-color: rgba(255, 255, 255, 0);
+                border: #ffffff00;
+              "
+          /></span>
+          <span class="button"
+            ><input
+              type="reset"
+              value="Reset"
+              style="
+                font-size: 20px;
+                color: rgb(34, 34, 34);
+                background-color: rgba(255, 255, 255, 0);
+                border: #ffffff00;
+              "
+          /></span>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
