@@ -1,17 +1,663 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <html>
-    <head>
-        <title>Academics in your college</title>
-        <link rel="stylesheet" href="homestyle.css">
-    </head>
-    <body>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="academic_area.html">Academic area</a></li>
-            <li><a href="essentials.html">Essentials</a></li>
-            <li><a href="suggestions.html">Suggestions</a></li>
-        </ul>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academics in your college</title>
+    <link rel="stylesheet" href="homestyle.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .navbar {
+        width: 65%;
+        height: 50px;
+        border-radius: 10px;
+        /* opacity: 0.45; */
+        backdrop-filter: blur(30px);
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .home,
+      .food,
+      .news,
+      .acadarea,
+      .sports,
+      .ess,
+      .sugg {
+        border-radius: 7px;
+        height: 30px;
+        /* width: 10%; */
+        display: flex;
+        font-size: large;
+        justify-content: center;
+        align-items: center;
+      }
+      .home:hover,
+      .food:hover,
+      .news:hover,
+      .acadarea:hover,
+      .sports:hover,
+      .sugg:hover,
+      .ess:hover {
+        font-size: 120%;
+        transition: font-size 0.35s;
+        color: rgb(0, 149, 255);
+      }
+
+      .div1 {
+        background-color: blue;
+        width: 25%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 10px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 20px;
+        font-size: 80%;
+        transition: all 1s ease-in-out;
+      }
+      .div1:hover {
+        font-size: 90%;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+      }
+
+      .content {
+        margin-top: 30px;
+        margin-left: 30px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><div class="home">Map</div></a>
+        <a href="food.html"><div class="food">Food</div></a>
+        <a href="news.html"><div class="news">News</div></a>
+        <a href="academic_area.html"
+          ><div class="acadarea">Academic_Area</div></a
+        >
+        <a href="sports.html"><div class="sports">Sports</div></a>
+        <a href="essentials.html"><div class="ess">Essentials</div></a>
+        <a href="suggestions.html"><div class="sugg">Suggestions</div></a>
+      </div>
+    </div>
+    <div class="content">
+      <div
+        class="div1"
+        id="mb"
+        style="
+          background-image: url('https://website.nitrkl.ac.in/images/bg/nitmain.jpg');
+          background-repeat: no-repeat;
+          background-size: 100%;
+        "
+      >
+        <h1>MAIN BUILDING</h1>
+        <span id="mbcont"
+          >The main building of the National Institute of Technology Rourkela
+          (NIT Rourkela) is the Administrative Building. It serves as the
+          central administrative hub for the institute and houses ....</span
+        >
+      </div>
+      <div
+        class="div1"
+        id="bba"
+        style="
+          background-image: url('https://www.collegebatch.com/static/clg-gallery/national-institute-of-technology-rourkela-239748.jpg');
+          background-repeat: no-repeat;
+          background-size: 100%;
+        "
+      >
+        <h1>BHUBANESWAR BEHERA AUDTORIUM(BBA)</h1>
+        <p>
+          The Biggest auditorium of NIT Rourkela with a grand symphony of
+          architectural elegance.The atmosphere is pregnant with the promise of
+          the auditory journey about to unfold.It can uphold about 500-600
+          people at a time.
+        </p>
+      </div>
+      <div class="div1" id="ppa">
+        <h1>PRANAKRUSHNA PARIJA AUDITORIUM(PPA)</h1>
+        <p>
+          It is another auditorium of NIT Rourkela with a similar aura like BBA
+          but can hold upto 200-250 people ata time.
+        </p>
+      </div>
+      <div class="div1" id="sac">
+        <h1>STUDENT ACTIVITY CENTRE(SAC)</h1>
+        <p>
+          It serves as a hub for various extracurricular and cultural activities
+          on campus.It serves as spaces for events, meetings, performances, and
+          other student-related activities. They often contribute to creating a
+          vibrant and dynamic campus life by providing students with
+          opportunities to engage in a variety of cultural, social, and
+          recreational pursuits outside of their academic studies.
+        </p>
+      </div>
+      <div class="div1" id="rmh">
+        <h1>RAJENDRA MISHRA(RM) HALL</h1>
+        <p>
+          It also serves as a hub for various extracurricular and cultural
+          activities on campus.It is a place where students rehearse their
+          performance in any event occuring in campus.
+        </p>
+      </div>
+      <div class="div1" id="la1">
+        <h1>LECTURE HALL COMPLEX 1(LA 1)</h1>
+        <p>
+          The lecture halls at NIT Rourkela are enchanting spaces that
+          seamlessly blend functionality with aesthetic appeal.The lecture halls
+          at LA 1 are quite big as compared to LA 2.It also comprises of
+          computer centre and labs.The halls are equipped with manificent
+          internet connectivity.
+        </p>
+      </div>
+      <div class="div1" id="la2">
+        <h1>LECTURE HALL COMPLEX 2(LA 2)</h1>
+        <p>
+          The lecture halls at NIT Rourkela are enchanting spaces that
+          seamlessly blend functionality with aesthetic appeal.
+        </p>
+      </div>
+      <div class="div1" id="bmbt">
+        <h1>BIOMEDICAL AND BIOTECHNOLOGY ENGINEERING DEPARTMENT</h1>
+        <p>
+          The Department of Biotechnology and Medical Engineering was
+          established in 2007 with the objective of providing a
+          multidisciplinary research and teaching program in Biotechnology and
+          Medical Engineering that advances fundamental understanding of how
+          biological systems operate and to develop effective biology-based
+          technologies for applications across a wide spectrum of societal needs
+          including innovations in diagnosis, therapy of human diseases, design
+          of novel biomaterials, biomedical devices, and in solving
+          environmental hazard.
+        </p>
+      </div>
+      <div class="div1" id="chfp">
+        <h1>CHEMICAL ENGINEERING AND FOOD PROCESSING ENGINEERING DEPARTMENT</h1>
+        <p>
+          The branch of Chemical Engineering deals with the chemical processes
+          for manufacturing of different products, designing of equipments,
+          fundamental understanding, and the technology of chemical, petroleum
+          and petrochemicals, pharmaceuticals, fertilizers, foods and many other
+          products. The Chemical Engineering department at NIT Rourkela
+          specializes in most of the modern broad areas such as modeling and
+          simulation, computational fluid dynamics, process control, reaction
+          engineering, transfer operations, thermodynamics, environmental
+          engineering, biochemical engineering, nanotechnology, renewable energy
+          and so on.
+        </p>
+        <p>
+          Food process engineering is set of post-harvest unit operations and
+          techniques used to transform the agricultural, livestock, fish and
+          marine products in to food suitable for human consumption and products
+          for food and allied industry. The Food process engineering department
+          at National Institute of Technology Rourkela blends engineering
+          disciplines with a strong understanding of food and food science.
+        </p>
+      </div>
+      <div class="div1" id="cr">
+        <h1>CERAMIC ENGINEERING DEPARTMENT</h1>
+        <p>
+          Traditionally Ceramic Engineers convert naturally occurring raw
+          materials (rocks and minerals) into useful but low cost products like
+          porcelain, glass and refractories which are used not only as household
+          items but also in metallurgical and allied industries. However, the
+          current trend is to use synthetic and purer raw materials to produce
+          advanced and tailor made ceramics like electronic components,
+          bio-ceramics, nuclear materials, cutting tools, aerospace components
+          etc
+        </p>
+      </div>
+      <div class="div1" id="cs">
+        <h1>COMPUTER SCIENCE AND ENGINEERING DEPARTMENT</h1>
+        <p>
+          Computer Science is the systematic study of the theoretical
+          foundations of information and computation and of practical techniques
+          for their implementation and application in computer systems. Computer
+          scientists invent algorithmic processes that create, describe, and
+          transform information and formulate suitable abstractions to model
+          complex systems. The study is devoted to theoretical foundations of
+          computation and practical techniques for their implementation in
+          computer systems
+        </p>
+      </div>
+      <div class="div1" id="eceiee">
+        <h1>ELECTRICAL SCIENCES DEPARTMENT</h1>
+        <p>
+          Electronics Engineers Design, develop and test electronic systems,
+          devices and equipment. Examples of these systems include computer
+          components, GPS systems, communication systems, antennas, satellite
+          transponders, electronics guidance system for aircrafts, electronic
+          control for missiles, signal processing based biomedical instruments,
+          entertainment electronics and home applications , VLSI and ULSI chips
+          and many more. There are several specializations within Electronics
+          Engineering that include Automatic Controls, Digital Systems (Computer
+          Systems), Electromagnetics, Electronics, Semiconductor Devices,
+          Communication and Signal Processing.
+        </p>
+        <p>
+          Electrical Engineering broadly involving electricity, electromagnetism
+          and electronics is essential in modern human life and industries. The
+          present day academic activities of electrical engineering are very
+          broad with this due reason. The electrical engineering department at
+          NIT Rourkela has specialized faculties in all important areas of
+          electrical engineering such as power system, power electronics &
+          drives, control & automation and signal processing.
+        </p>
+      </div>
+      <div class="div1" id="meid">
+        <h1>MECHANICAL SCIENCES DEPARTMENT</h1>
+        <p>
+          Mechanical Engineering is often called the mother of all engineering.
+          It covers a host of subjects: properties of materials, structural
+          design, material processing, manufacturing, heat engines,
+          refrigeration and air conditioning, industrial management, robotics
+          and much more. The Mechanical Engineering Department of NIT, Rourkela
+          is known for research in most of these fields. The main foci of
+          research are on mechanical vibration, robotics, CAD/CAM, precision
+          engineering, Metal forming, manufacturing, CFD, Industrial
+          refrigeration and Cryogenics.
+        </p>
+        <p>
+          Industrial Design involves the design and development of industrially
+          produced items. Industrial designers use drawings, models, and
+          computer programmes to design products and processes. Industrial
+          design products include items such as mobile phones, automobiles,
+          household appliances, electronic equipment, furniture, jewelry etc.
+          and products which will be made as one-offs, such as craft products,
+          trophies, or models and full-scale mock-ups. The industrial designers
+          also use their skills to invent completely new products, to do
+          computer modelling and animation, and to propose new ways of doing
+          everyday things. In addition to aesthetic concerns, social references,
+          global interactions and the expectations of the users are taken into
+          consideration.
+        </p>
+      </div>
+      <div class="div1" id="mm">
+        <h1>METALLURGICAL AND MATERIALS ENGINEERING DEPARTMENT</h1>
+        <p>
+          Historically Metallurgical discipline deals with extraction of metals
+          from their ores, transforming them in different pure or alloy form of
+          different engineering shapes, and to study their internal structure in
+          an atomic scale to correlate with the manifested properties.
+          Comparatively, new dimension of understanding and evaluating newer
+          materials necessitate Materials engineering approach, which is an
+          interdisciplinary field to study all type of engineering materials and
+          advanced materials despite their basic classification.
+        </p>
+      </div>
+      <div class="div1" id="mn">
+        <h1>MINING ENGINEERING DEPARTMENT</h1>
+        <p>
+          Mining is the activity concerned with the extraction of minerals where
+          as mining engineering is the practice of applying engineering
+          principles to planning, development, operation, closure and
+          reclamation of mines. Mining industry is in the lime light today,
+          because it provides most of the raw materials required for the ever
+          increasing demands of the society with regard to infrastructure,
+          goods, services and energy. The Department of Mining Engineering at
+          NIT Rourkela specializes in Mining Technology, Geomechanics and Strata
+          Control, Mine Environment and Safety Engineering, Clean Coal
+          Technology, Mine Planning, Mie Surveying, Mining Geology and
+          Hydrologeology. It boasts the modern and sophisticated equipments for
+          physical experimentation viz. DTA, AAS, Computer Controlled
+          Compression Testing Machine, Ultrasonic Testing Machine, Rheometer,
+          Gas Chromatograph, Digital Bomb Calorimeter, UV-visible
+          Spectrphotomter, GPS, Total Station etc.
+        </p>
+        <p>
+          The Department of Earth and Atmospheric Science is set up to provide
+          state of the art education and research in earth, climate and ocean
+          sciences. Earth and Atmospheric Science is a strongly
+          interdisciplinary subject which links different resources (e. g.
+          minerals, energy and water), natural hazards, environmental issues,
+          and also serves as a significant relation to weather and climate,
+          which is inevitable for human life and our society
+        </p>
+      </div>
+
+      <div class="div1" id="sm">
+        <h1>SCHOOL OF MANAGEMENT</h1>
+        <p>
+          The Department of Management at NIT Rourkela is a prestigious and
+          dynamic academic department dedicated to nurturing future leaders in
+          the field of management. With a focus on imparting comprehensive
+          knowledge and practical skills, the department offers a range of
+          programs that equip students with a strong foundation in management
+          principles and practices.
+        </p>
+      </div>
+      <div class="div1" id="spa">
+        <h1>DEPARTMENT OF PLANNING AND ARCHITECTURE</h1>
+        <p>
+          The Department of Planning and Architecture (PA) was established in
+          2013 with the objective of amalgamating the aesthetics and technology
+          together into a piece of art, in a creative way, not only to fulfil
+          the societal need of shelter and to solve the infrastructure problem
+          but also to take care of the emerging concern of energy and
+          environmental issues. The department is providing multidisciplinary
+          research and teaching programmes in the field of architecture and
+          planning. The faculty members have diverse research interests and they
+          conduct basic and applied research in the area of Sustainable
+          Architecture, Energy Efficient Architecture, Green Architecture,
+          Acoustics, Illumination, Landscape Architecture, Interior Design,
+          Urban Planning, Transportation Planning, Infrastructure Planning,
+          Environmental Planning and Housing.
+        </p>
+      </div>
+      <div class="div1" id="bpcl">
+        <h1>BIJU PATTNAIK CENTRAL LIBRARY</h1>
+        <p>
+          It is the common library of NIT Rourkela which provides a silent and
+          peaceful atmosphere for a focused study among the students.It provides
+          a humonguous number of books for the readers.
+        </p>
+      </div>
+      <div class="div1" id="ics">
+        <h1>INSTITUTE COUNSELLING SERVICES(ICS)</h1>
+        <p>
+          It is a Technical Service Unit (TSU) of NIT Rourkela. Established in
+          August 2017, the team comprises of faculty members, including Head of
+          Unit, Prof. Pawan Kumar, Student Coordinators, Prefects and Mentors.
+          ICS aims to prepare the students for a confident approach towards life
+          and to bring about a voluntary change in themselves. The goal of
+          counselling is to help individuals overcome their immediate problems
+          and also to equip them to meet future problems. The goals of
+          counselling are appropriately concerned with fundamental and basic
+          aspects such as self-understanding and self-actualization.
+        </p>
+      </div>
+      <div class="div1" id="cw">
+        <h1>CENTRAL WORKSHOP</h1>
+        <p>
+          It is a workshop with a vibrant tapestry of collaborative learning,
+          where participants embark on a journey of discovery and skill
+          enhancement. The atmosphere is charged with an electric synergy, as
+          individuals from diverse backgrounds gather, eager to contribute and
+          absorb knowledge.
+        </p>
+      </div>
+      <div class="div1" id="ome">
+        <h1>OLD MECHANICAL BUILDING</h1>
+        <p>
+          It is a laboratory where any practical or reserch based studies are
+          carried on. Earlier, it is the Mechanical Sciences building.
+        </p>
+      </div>
+      <div class="div1" id="gb">
+        <h1>GOLDEN JUBILEE BUILDING</h1>
+        <p>
+          An absolute beauty of NIT Rourkela with its magnificent L-shaped
+          design. It consists of 14 floors with an underground parking.
+        </p>
+      </div>
+    </div>
+    <script src="script.js">
+      document.getElementById("mb").addEventListener("click", function () {
+        if (mb.style.width != "90%") {
+          mb.style.width = "90%";
+          mb.style.height = "600px";
+          document.getElementById("mbcont").innerHTML =
+            "The main building of the National Institute of Technology Rourkela (NIT Rourkela) is the Administrative Building. It serves as the central administrative hub for the institute and houses various offices, including the administration, registrar, and other important departments.It also serves as departments for Civil Engineering and Integrated M.Sc. like Maths, Physics, Chemistry, and Life Sciences. Civil Engineering is concerned with the improvement in quality of basic needs of human civilization and taking care of the naturally and humanly built environments with their planning, designing, construction, operation and maintenance. The Civil Engineering Department at NIT Rourkela is earnestly working to develop solutions to major sustainability challenges of the country and committed to produce leaders impacting the society at large. The Department of Mathematics, one of the oldest departments of NIT Rourkela (formerly known as REC Rourkela) is known for its quality. It offers Integrated MSc, MSc, and PhD programs in Mathematics. The department wants to concentrate on offering a thorough undergraduate and postgraduate curriculum, pertinent research, and professional prospects in India and overseas.";
+        } else {
+          mb.style.width = "25%";
+          mb.style.height = "300px";
+          document.getElementById("mbcont").innerHTML =
+            "The main building of the National Institute of Technology Rourkela (NIT Rourkela) is the Administrative Building. It serves as the central administrative hub for the institute and houses ...";
+        }
+      });
+      document.getElementById("bba").addEventListener("click", function () {
+        if (bba.style.width != "90%") {
+          bba.style.width = "90%";
+          bba.style.height = "600px";
+
+          document.getElementById("bba").scrollIntoView({ behavior: "smooth" });
+        } else {
+          bba.style.width = "25%";
+          bba.style.height = "300px";
+          mb.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+      document.getElementById("ppa").addEventListener("click", function () {
+        if (ppa.style.width != "90%") {
+          ppa.style.width = "90%";
+          ppa.style.height = "600px";
+
+          document.getElementById("ppa").scrollIntoView({ behavior: "smooth" });
+        } else {
+          ppa.style.width = "25%";
+          ppa.style.height = "300px";
+        }
+      });
+      document.getElementById("sac").addEventListener("click", function () {
+        if (sac.style.width != "90%") {
+          sac.style.width = "90%";
+          sac.style.height = "600px";
+
+          document.getElementById("sac").scrollIntoView({ behavior: "smooth" });
+        } else {
+          sac.style.width = "25%";
+          sac.style.height = "300px";
+        }
+      });
+      document.getElementById("rmh").addEventListener("click", function () {
+        if (rmh.style.width != "90%") {
+          rmh.style.width = "90%";
+          rmh.style.height = "600px";
+
+          document.getElementById("rmh").scrollIntoView({ behavior: "smooth" });
+        } else {
+          rmh.style.width = "25%";
+          rmh.style.height = "300px";
+        }
+      });
+      document.getElementById("la1").addEventListener("click", function () {
+        if (la1.style.width != "90%") {
+          la1.style.width = "90%";
+          la1.style.height = "600px";
+
+          document.getElementById("la1").scrollIntoView({ behavior: "smooth" });
+        } else {
+          la1.style.width = "25%";
+          la1.style.height = "300px";
+        }
+      });
+      document.getElementById("la2").addEventListener("click", function () {
+        if (la2.style.width != "90%") {
+          la2.style.width = "90%";
+          la2.style.height = "600px";
+
+          document.getElementById("la2").scrollIntoView({ behavior: "smooth" });
+        } else {
+          la2.style.width = "25%";
+          la2.style.height = "300px";
+        }
+      });
+      document.getElementById("bmbt").addEventListener("click", function () {
+        if (bmbt.style.width != "90%") {
+          bmbt.style.width = "90%";
+          bmbt.style.height = "600px";
+
+          document.getElementById("bmbt").scrollIntoView({ behavior: "smooth" });
+        } else {
+          bmbt.style.width = "25%";
+          bmbt.style.height = "300px";
+        }
+      });
+      document.getElementById("chfp").addEventListener("click", function () {
+        if (chfp.style.width != "90%") {
+          chfp.style.width = "90%";
+          chfp.style.height = "600px";
+
+          document.getElementById("chfp").scrollIntoView({ behavior: "smooth" });
+        } else {
+          chfp.style.width = "25%";
+          chfp.style.height = "300px";
+        }
+      });
+      document.getElementById("cr").addEventListener("click", function () {
+        if (cr.style.width != "90%") {
+          cr.style.width = "90%";
+          cr.style.height = "600px";
+
+          document.getElementById("cr").scrollIntoView({ behavior: "smooth" });
+        } else {
+          cr.style.width = "25%";
+          cr.style.height = "300px";
+        }
+      });
+      document.getElementById("cs").addEventListener("click", function () {
+        if (cs.style.width != "90%") {
+          cs.style.width = "90%";
+          cs.style.height = "600px";
+
+          document.getElementById("cs").scrollIntoView({ behavior: "smooth" });
+        } else {
+          cs.style.width = "25%";
+          cs.style.height = "300px";
+        }
+      });
+      document.getElementById("eceiee").addEventListener("click", function () {
+        if (eceiee.style.width != "90%") {
+          eceiee.style.width = "90%";
+          eceiee.style.height = "600px";
+
+          document.getElementById("eceiee").scrollIntoView({ behavior: "smooth" });
+        } else {
+          eceiee.style.width = "25%";
+          eceiee.style.height = "300px";
+        }
+      });
+      document.getElementById("meid").addEventListener("click", function () {
+        if (meid.style.width != "90%") {
+          meid.style.width = "90%";
+          meid.style.height = "600px";
+
+          document.getElementById("meid").scrollIntoView({ behavior: "smooth" });
+        } else {
+          meid.style.width = "25%";
+          meid.style.height = "300px";
+        }
+      });
+      document.getElementById("mm").addEventListener("click", function () {
+        if (mm.style.width != "90%") {
+          mm.style.width = "90%";
+          mm.style.height = "600px";
+
+          document.getElementById("mm").scrollIntoView({ behavior: "smooth" });
+        } else {
+          mm.style.width = "25%";
+          mm.style.height = "300px";
+        }
+      });
+      document.getElementById("mn").addEventListener("click", function () {
+        if (mn.style.width != "90%") {
+          mn.style.width = "90%";
+          mn.style.height = "600px";
+
+          document.getElementById("mn").scrollIntoView({ behavior: "smooth" });
+        } else {
+          mn.style.width = "25%";
+          mn.style.height = "300px";
+        }
+      });
+      document.getElementById("sm").addEventListener("click", function () {
+        if (sm.style.width != "90%") {
+          sm.style.width = "90%";
+          sm.style.height = "600px";
+
+          document.getElementById("sm").scrollIntoView({ behavior: "smooth" });
+        } else {
+          sm.style.width = "25%";
+          sm.style.height = "300px";
+        }
+      });
+      document.getElementById("spa").addEventListener("click", function () {
+        if (spa.style.width != "90%") {
+          spa.style.width = "90%";
+          spa.style.height = "600px";
+
+          document.getElementById("spa").scrollIntoView({ behavior: "smooth" });
+        } else {
+          spa.style.width = "25%";
+          spa.style.height = "300px";
+        }
+      });
+      document.getElementById("bpcl").addEventListener("click", function () {
+        if (bpcl.style.width != "90%") {
+          bpcl.style.width = "90%";
+          bpcl.style.height = "600px";
+
+          document.getElementById("bpcl").scrollIntoView({ behavior: "smooth" });
+        } else {
+          bpcl.style.width = "25%";
+          bpcl.style.height = "300px";
+        }
+      });
+      document.getElementById("ics").addEventListener("click", function () {
+        if (ics.style.width != "90%") {
+          ics.style.width = "90%";
+          ics.style.height = "600px";
+
+          document.getElementById("ics").scrollIntoView({ behavior: "smooth" });
+        } else {
+          ics.style.width = "25%";
+          ics.style.height = "300px";
+        }
+      });
+      document.getElementById("cw").addEventListener("click", function () {
+        if (cw.style.width != "90%") {
+          cw.style.width = "90%";
+          cw.style.height = "600px";
+
+          document.getElementById("cw").scrollIntoView({ behavior: "smooth" });
+        } else {
+          cw.style.width = "25%";
+          cw.style.height = "300px";
+        }
+      });
+      document.getElementById("ome").addEventListener("click", function () {
+        if (ome.style.width != "90%") {
+          ome.style.width = "90%";
+          ome.style.height = "600px";
+
+          document.getElementById("ome").scrollIntoView({ behavior: "smooth" });
+        } else {
+          ome.style.width = "25%";
+          ome.style.height = "300px";
+        }
+      });
+      document.getElementById("gb").addEventListener("click", function () {
+        if (gb.style.width != "90%") {
+          gb.style.width = "90%";
+          gb.style.height = "600px";
+
+          document.getElementById("gb").scrollIntoView({ behavior: "smooth" });
+        } else {
+          gb.style.width = "25%";
+          gb.style.height = "300px";
+        }
+      });
+    </script>
+  </body>
 </html>
